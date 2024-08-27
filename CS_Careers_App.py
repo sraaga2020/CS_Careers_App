@@ -117,7 +117,7 @@ for i in range(num_rows):
     # higher proficiency for career skills
     if career in career_skills:
         skill_indices = [skills.index(skill) for skill in career_skills[career] if skill in skills]
-        proficiency[skill_indices] = np.random.randint(6, 11, size=len(skill_indices))
+        proficiency[skill_indices] = np.random.randint(8, 11, size=len(skill_indices))
     
     df.loc[i] = list(proficiency) + [career]
 
