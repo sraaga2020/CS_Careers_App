@@ -39,7 +39,7 @@ resources = [
 
 
 # define skill search by career function 
-st.title("Career Predictor Based on Skills")
+st.title("Career Granny")
 def skillsByCareer():
     global filtered_df
     global resources
@@ -153,7 +153,7 @@ def careerBySkills():
 # define main function
 def main():
     st.subheader("Welcome to Career Granny!")
-    st.write("Get started by selecting a feature from the dropdown below.")
+    st.write("Get started by selecting a feature below!")
     st.write("You can either search for skills required for a specific career or predict a career based on your skills.")
     if 'selected_option' not in st.session_state:
         st.session_state.selected_option = None
